@@ -18,10 +18,11 @@ export type InitialStateType = {
 const initialState: InitialStateType = {
   lists: ["All", "list A", "list B"],
   tasks: [
-    { id: 0, content: "Test task 1", list: "list A", status: true },
-    { id: 1, content: "Test task 2", list: "list A", status: false },
-    { id: 2, content: "Test task 3", list: "list B", status: false },
-    { id: 3, content: "Test task 4", list: "list B", status: false },
+    { id: 100, status: false, list: "list A", content: "Test task 1" },
+    { id: 101, status: false, list: "list A", content: "Test task 2" },
+    { id: 102, status: true, list: "list B", content: "Test task 3" },
+    { id: 103, status: false, list: "list B", content: "Test task 4" },
+    { id: 104, status: true, list: "All", content: "Test task 5" },
   ],
   currentList: "All",
 };

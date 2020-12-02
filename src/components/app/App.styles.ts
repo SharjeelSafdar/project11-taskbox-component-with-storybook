@@ -8,11 +8,5 @@ export const useStyles = makeStyles((theme) =>
       padding: theme.spacing(3),
       minHeight: "60vh",
     },
-    newTaskBtn: {
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-    },
   })
 );
