@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useSelector } from "react-redux";
-import { Container, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 
 import { RootState } from "../../store/rootReducer";
 import { TaskItem } from "../taskItem/TaskItem";
@@ -17,7 +17,7 @@ export const TaskList: FC = () => {
       : tasks.filter((task) => task.list === currentList);
 
   return (
-    <Container>
+    <>
       {currentTasks.length === 0 ? (
         <Typography variant="body1">There are no tasks; enjoy. ;)</Typography>
       ) : (
@@ -25,6 +25,6 @@ export const TaskList: FC = () => {
           <TaskItem key={id} content={content} status={status} id={id} />
         ))
       )}
-    </Container>
+    </>
   );
 };

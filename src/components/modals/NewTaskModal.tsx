@@ -57,7 +57,7 @@ export const NewTaskModal: FC<ModalProps> = ({ modalStatus, closeModal }) => {
         </Typography>
         <Box marginTop={2} marginBottom={3}>
           <Typography variant="body2" color="textPrimary">
-            {`Creating a new task in "${currentList}" list.`}
+            {`Creating a new task in "${currentList}" list. Click outside the box to cancel.`}
           </Typography>
         </Box>
         <Box marginBottom={3}>

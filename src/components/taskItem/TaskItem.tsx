@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import { Grid, IconButton } from "@material-ui/core";
+import { Container, Box, IconButton, Typography } from "@material-ui/core";
 import { useDispatch } from "react-redux";
 import { BsCircle, BsCheckCircle } from "react-icons/bs";
 import { AiTwotoneDelete } from "react-icons/ai";
@@ -35,15 +35,8 @@ export const TaskItem: FC<TaskItemProps> = ({
   const dispatch = useDispatch();
 
   return (
-    <Grid
-      container
-      direction="row"
-      justify="flex-start"
-      alignItems="center"
-      spacing={2}
-      className={classes.container}
-    >
-      <Grid item xs={1}>
+    <Container className={classes.container}>
+      <Box className={classes.toggleBtn}>
         <IconButton
           onClick={() => dispatch(toggleTaskStatus({ id }))}
           title="Toggle status."
@@ -51,11 +44,11 @@ export const TaskItem: FC<TaskItemProps> = ({
         >
           {status ? <BsCheckCircle color="#0f0" /> : <BsCircle color="#888" />}
         </IconButton>
-      </Grid>
-      <Grid item xs={9}>
-        <span>{content}</span>
-      </Grid>
-      <Grid item xs={1} className={classes.editBtn}>
+      </Box>
+      <Box>
+        <Typography variant="body2">{content}</Typography>
+      </Box>
+      <Box className={classes.editBtn}>
         <IconButton
           onClick={() => setShowEditTaskModal(true)}
           title="Edit task."
@@ -71,8 +64,8 @@ export const TaskItem: FC<TaskItemProps> = ({
           taskId={id}
           oldTaskContent={content}
         />
-      </Grid>
-      <Grid item xs={1} className={classes.deleteBtn}>
+      </Box>
+      <Box className={classes.deleteBtn}>
         <IconButton
           onClick={() => setShowDeleteTaskModal(true)}
           title="Delete task."
@@ -87,7 +80,7 @@ export const TaskItem: FC<TaskItemProps> = ({
           closeModal={() => setShowDeleteTaskModal(false)}
           taskId={id}
         />
-      </Grid>
-    </Grid>
+      </Box>
+    </Container>
   );
 };
