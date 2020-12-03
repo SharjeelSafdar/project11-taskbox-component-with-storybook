@@ -1,9 +1,7 @@
 import React, { FC } from "react";
 import { Paper, Container, Box } from "@material-ui/core";
 
-import { ListHeader } from "../listHeader/ListHeader";
-import { TaskList } from "../taskList/TaskList";
-import { CreateNewTask } from "../createNewTask/CreateNewTask";
+import { Title, ListHeader, TaskList, CreateNewTask } from "../";
 import { useStyles } from "./App.styles";
 
 export const App: FC = () => {
@@ -11,6 +9,7 @@ export const App: FC = () => {
 
   return (
     <Container>
+      <Title />
       <Paper elevation={3} className={classes.container}>
         <Box marginBottom={3}>
           <ListHeader />
