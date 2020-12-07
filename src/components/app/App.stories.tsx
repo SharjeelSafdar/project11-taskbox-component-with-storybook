@@ -16,7 +16,9 @@ export default {
             backgroundColor: "#282c34",
             padding: "1em",
             display: "flex",
+            flexDirection: "column",
             justifyContent: "center",
+            alignItems: "center",
           }}
         >
           <Story />
