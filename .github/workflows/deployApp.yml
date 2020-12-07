@@ -39,8 +39,8 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
 
-      - name: Build Storybook
-        run: yarn build-storybook
+      # - name: Build Storybook
+      # run: yarn build-storybook
 
       - name: Netlify Actions for Deploying Storybook
         uses: nwtgck/actions-netlify@v1.1.5
