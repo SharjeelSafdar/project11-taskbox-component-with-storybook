@@ -15,9 +15,12 @@ export interface TaskItemProps {
    */
   content: string;
   /**
-   * Is the task complete or not
+   * Is the task complete or not?
    */
   status: boolean;
+  /**
+   * Id of task in a redux store.
+   */
   id: number;
 }
 

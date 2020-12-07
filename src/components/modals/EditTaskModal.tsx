@@ -13,7 +13,7 @@ import { editTask } from "../taskList/TaskListSlice";
 import { useStyles } from "./modals.styles";
 import { ModalProps } from "./modals.types";
 
-interface EditTaskModalProps extends ModalProps {
+export interface EditTaskModalProps extends ModalProps {
   taskId: number;
   oldTaskContent: string;
 }

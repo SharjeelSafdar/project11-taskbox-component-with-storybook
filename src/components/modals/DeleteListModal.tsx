@@ -6,7 +6,7 @@ import { deleteList } from "../taskList/TaskListSlice";
 import { useStyles } from "./modals.styles";
 import { ModalProps } from "./modals.types";
 
-interface DeleteListModalProps extends ModalProps {
+export interface DeleteListModalProps extends ModalProps {
   listToDelete: string;
 }
 

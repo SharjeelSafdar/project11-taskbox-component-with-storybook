@@ -6,7 +6,7 @@ import { deleteTask } from "../taskList/TaskListSlice";
 import { useStyles } from "./modals.styles";
 import { ModalProps } from "./modals.types";
 
-interface DeleteTaskModalProps extends ModalProps {
+export interface DeleteTaskModalProps extends ModalProps {
   taskId: number;
 }
 
