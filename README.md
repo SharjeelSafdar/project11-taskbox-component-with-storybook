@@ -23,4 +23,4 @@ The following are some of the learning outcomes of this project:
 - Using [Storybook](https://storybook.js.org/) for designing commponents in isolation.
 - Using Redux for state management
 - Using Typescript to develop a typed web app
-- Building a web app with React.JS, [React Icons](https://react-icons.github.io/react-icons/), [React Router DOM](https://reactrouter.com/), [Material-UI](https://material-ui.com/), [Redux Toolkit](https://redux-toolkit.js.org/) etc.
+- Building a web app with React.JS, [React Icons](https://react-icons.github.io/react-icons/), [Material-UI](https://material-ui.com/), [Redux Toolkit](https://redux-toolkit.js.org/) etc.
